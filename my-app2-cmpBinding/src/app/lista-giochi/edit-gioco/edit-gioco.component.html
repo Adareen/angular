@@ -1,0 +1,22 @@
+<p>qui creo il mio nuovo gioco con un form e lo emetto al parent</p>
+
+
+<div class="col-6">
+
+
+    <div class="mb-3">
+
+        <label for="" class form-label>Name gioco</label>
+
+        <!-- TWO WAY DATA BINDING: ovvero associo un campo input con una proprietà di classe -->
+        <input type="text" class="form-control" [([(ngModel)]="nomeGioco")]>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- il metodo onCreaGioco() si occuperà di emettere il nuovo gioco sfruttando l'event emitter -->
+<button (click)="onCreaGioco()" class="btn btn-outline-success">Crea Gioco</button>
