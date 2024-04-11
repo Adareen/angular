@@ -1,0 +1,20 @@
+<p>lista-panini works!</p>
+
+<!-- * sono direttive di renderizzazione (for of) / direttiva ngFor /  -->
+<ul *ngFor="let panino of listaPanini">
+
+    <li>{{panino.nome}}. Ingredienti:
+        <ul *ngFor="let ingrediente of panino.ingredienti">
+            <li>{{ingrediente}}</li>
+            
+        </ul>
+        <strong>{{panino.prezzo| currency:"EUR"}}</strong>
+    </li>
+
+    
+
+
+</ul>
+
+
+<!-- nome, cognome, corsi [], presenza boolean, immagine, pulsante presenta -->
